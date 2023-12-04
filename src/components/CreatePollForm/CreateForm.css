@@ -55,6 +55,6 @@
 }
 @media (min-width: 764px) {
   .create_poll_form {
-    width: 500px;
+    max-width: 500px;
   }
 }
