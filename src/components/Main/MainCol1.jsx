@@ -2,42 +2,30 @@ import React from 'react'
 import search_btn from '../../assets/search_btn.png'
 import filter_icon from '../../assets/filter_icon.png'
 import fifa_img from '../../assets/fifa_Img.png'
-import profile_pic2 from '../../assets/profile_pic2.png'
+// import profile_pic2 from '../../assets/profile_pic2.png'
 import AllPolls from './AllPolls'
 import {FaBars} from 'react-icons/fa'
 // import SuggestedVote from '../SuggestedVote'
 
 const MainCol1 = (props) => {
-  const CardDetails = [
-        {
-            id: 1,
-            img: profile_pic2,
-            name: "Kayode Wills",
-        },
-        {
-            id: 2,
-            img: profile_pic2,
-            name: "Kayode Wills",
-        },
-        {
-            id: 3,
-            img: profile_pic2,
-            name: "Kayode Wills",
-        }
-    ]
-  const {openBurger, setOpenBurger} = props
-  // const [currentCard, setCurrentCard] = useState(0);
-
-// const handleCardClick = (id) => {
-//   // Set z-index of clicked card to be highest
-//   CardDetails.id.style.zIndex = 10;
-//   // Set z-index of other cards to be lower
-//   CardDetails.forEach((card, id) => {
-//     if (id !== id) {
-//       card.style.zIndex = 0;
-//     }
-//   });
-// };
+  // const CardDetails = [
+  //       {
+  //           id: 1,
+  //           img: profile_pic2,
+  //           name: "Kayode Wills",
+  //       },
+  //       {
+  //           id: 2,
+  //           img: profile_pic2,
+  //           name: "Kayode Wills",
+  //       },
+  //       {
+  //           id: 3,
+  //           img: profile_pic2,
+  //           name: "Kayode Wills",
+  //       }
+  //   ]
+  const {openBurger, setOpenBurger, openRequestModal, setOpenRequestModal} = props
 
   return (
     <React.Fragment>
@@ -61,13 +49,6 @@ const MainCol1 = (props) => {
   <img src={fifa_img} alt="fifa_img" />
 </div>
 {/* SUGGESTED VOTE SECTION BEGINS */}
-{/* <section className='suggested_vote_section'>
-  <h3 className='font-bold'>Suggested polls</h3>
-  <div className='suggested_vote_cards'> */}
-{/* <SuggestedVote active={currentCard === id} setCurrentCard={setCurrentCard}  CardDetails={CardDetails}/> */}
-{/* <SuggestedVote CardDetails={CardDetails}/> */}
-{/* </div>
-</section> */}
 
 {/* SUGGESTED VOTE SECTION ENDS */}
 {/* Buttons div */}
@@ -77,7 +58,7 @@ const MainCol1 = (props) => {
   <button>Private</button>
 </div>
 
-<AllPolls/>
+<AllPolls openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
       </main>
     </React.Fragment>
   )

@@ -65,7 +65,7 @@ body {
 }
 .mobile_bar_section {
   display: block;
-  width: 50%;
+  width: 60%;
   background-color: var(--primary_purple_color);
   position: fixed;
   height: 100dvh;
@@ -79,6 +79,9 @@ body {
   align-items: center;
   padding: 1rem;
 }
+.mobile_header .header_col_2 .input_div {
+  padding: 0.5rem;
+}
 .side_bar_section {
   background-color: var(--primary_purple_color);
   display: none;
@@ -87,11 +90,6 @@ body {
   padding: 1.2rem;
 }
 /* CAST VOTE COMPONENT */
-/* .cast_vote_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .cast_vote_container {
   background-color: var(--white_bg_color);
   max-width: 700px;
@@ -180,19 +178,18 @@ body {
   margin: auto;
   text-align: center;
 }
-.close_poll_container_overlay {
-  background-color: rgba(0, 0, 0, 0.2);
+.home_section {
+  position: relative;
+}
+.request_access_overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
-}
-.close_poll_container {
-  background-color: var(--white_bg_color);
+  height: 100vh;
+  z-index: 10;
   width: 100%;
-  max-width: 400px;
-  margin: auto;
-  padding: 1rem 2rem;
 }
 @media (min-width: 764px) {
   .header {

@@ -12,7 +12,8 @@ import fifa_img from '../../assets/fifa_Img.png'
 import {FaBars} from 'react-icons/fa'
 import MobileHeader from '../MobileHeader'
 import { Link } from 'react-router-dom'
-import MobileNotif from '../MobileNotif'
+// import MobileNotif from '../MobileNotif'
+import MainCol2Mobile from '../MainCol2Mobile'
 import profile_pic2 from '../../assets/profile_pic2.png'
 import timeIcon from '../../assets/timeIcon.png'
 import ProgressBar from '../PrgogressBar/ProgressBar'
@@ -395,7 +396,7 @@ const MyPolls = (props) => {
         {/* MAIN COL 2 ENDS */}
         {/* <MainCol2/> */}
         
-        {openNotif ? <MobileNotif/> : null}
+        {openNotif ? <MainCol2Mobile/> : null}
         </div>
       {/* </section> */}
     
