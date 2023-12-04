@@ -108,7 +108,7 @@ body {
 .proceed_pay_container .go_back_btn {
   border: 1px solid var(--primary_purple_color);
   border-radius: 10px;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 2rem;
   margin-right: 0.5rem;
 }
 .unique_token_section .continue_btn,
@@ -119,7 +119,7 @@ body {
   background-color: var(--primary_purple_color);
   color: var(--white_bg_color);
   border-radius: 10px;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 2rem;
 }
 .access_poll_container {
   background-color: var(--white_bg_color);
@@ -137,7 +137,7 @@ body {
 .request_access_container {
   background-color: var(--white_bg_color);
   border-radius: 4px;
-  max-width: 350px;
+  max-width: 300px;
   padding: 1rem 2rem;
   margin: auto;
   text-align: center;
@@ -146,12 +146,12 @@ body {
   background-color: var(--primary_purple_color);
   color: var(--white_bg_color);
   border-radius: 10px;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 2rem;
 }
 .request_access_container .go_back_btn {
   border: 1px solid var(--primary_purple_color);
   border-radius: 10px;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 2rem;
   margin-right: 0.5rem;
 }
 .proceed_pay_container {
@@ -229,11 +229,27 @@ body {
   .cast_vote_container {
     max-width: 400px;
   }
+  .unique_token_section .go_back_btn,
+  .access_poll_container .go_back_btn,
+  .proceed_pay_container .go_back_btn {
+    padding: 0.5rem 4rem;
+  }
+  .unique_token_section .continue_btn,
+  .access_poll_container .continue_btn,
+  .proceed_pay_container .continue_btn,
+  .pay_confirm_section .continue_btn,
+  .how_many_votes_container .continue_btn {
+    padding: 0.5rem 4rem;
+  }
   .access_poll_container,
   .proceed_pay_container,
   .request_access_container,
   .unique_token_section,
   .pay_confirm_section {
     max-width: 500px;
+  }
+  .request_access_container .continue_btn,
+  .request_access_container .go_back_btn {
+    padding: 0.5rem 4rem;
   }
 }

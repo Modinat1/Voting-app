@@ -1,7 +1,7 @@
 .my_poll_section {
   position: relative;
   margin: auto;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .view_close_poll_btn {
   display: flex;
