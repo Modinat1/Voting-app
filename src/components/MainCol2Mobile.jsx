@@ -1,5 +1,5 @@
 import React from 'react'
-import poll from '../assets/poll.png'
+import './Main/Main.css'
 import user_1 from '../assets/user_1.png'
 import user_2 from '../assets/user_2.png'
 import sharp_poll from '../assets/sharp_poll.png'
@@ -7,16 +7,13 @@ import fluent_payment from '../assets/fluent_payment.png'
 import { Link } from 'react-router-dom'
 
 
-const MobileNotif = () => {
-
+const MainCol2Mobile = () => {
   return (
-    <section className='mobile_notif_section'>
-      <Link to="/mypolls">  <div className='main_col_2_section_input_div'>
-            <img src={poll} alt="" />
-            <button>My polls</button>
-            {/* <input type="text" placeholder='My polls' /> */}
-        </div></Link>
-      
+    <>
+        <section className='main_col_2_section mobile_notif_section'>
+        <div style={{backgroundColor: "#ff8a15"}} className='main_col_2_section_input_div'>
+           <Link to="/create_poll" className='py-2 text-white'><button >Create poll</button></Link>
+        </div>
 
         <div className="notification_card">
             <h3 className='font-bold text-lg'>Notifications</h3>
@@ -82,10 +79,11 @@ const MobileNotif = () => {
             </div>
         </div>
 
-
         
     </section>
+    
+    </>
   )
 }
 
-export default MobileNotif
+export default MainCol2Mobile

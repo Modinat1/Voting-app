@@ -6,7 +6,8 @@ import fifa_img from '../../assets/fifa_Img.png'
 import fourth_card_img from '../../assets/fourth_card_img.png'
 
 
-const AllPolls = () => {
+const AllPolls = (props) => {
+  const {openRequestModal, setOpenRequestModal} = props
   return (
     <section className='all_polls_section'>
         {/* FIRST CARD */}
@@ -23,7 +24,7 @@ const AllPolls = () => {
           
         
         <h4 className='my-2'>What is yout preferred programming language</h4>
-        <ProgressBar title="Python" percent="75%"/>
+        <ProgressBar title="Python" percent="75%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
         <ProgressBar title="Javascript" percent="40%"/>
 
         <div className='flex items-center justify-between mt-2'>

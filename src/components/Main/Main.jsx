@@ -8,14 +8,14 @@ import MobileNotif from '../MobileNotif'
 
 
 const Main = (props) => {
-  const {openBurger, setOpenBurger, openNotif, setOpenNotif} = props
+  const {openBurger, setOpenBurger, openNotif, setOpenNotif, openRequestModal, setOpenRequestModal} = props
   return (
     <React.Fragment>
       <section>
         <Header/>
         <MobileHeader openNotif={openNotif} setOpenNotif={setOpenNotif}/>
         <div className='main_grid'>
-        <MainCol1 openBurger={openBurger} setOpenBurger={setOpenBurger}/>
+        <MainCol1 openBurger={openBurger} setOpenBurger={setOpenBurger} openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
         <MainCol2/>
         
         {openNotif ? <MobileNotif/> : null}

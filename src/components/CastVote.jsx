@@ -8,7 +8,6 @@ import RequestAccess from './RequestAccess'
 import ProceedPay from './ProceedPay'
 import PaymentConfirmed from './PaymentConfirmed'
 import HowManyVotes from './HowManyVotes'
-import ClosePoll from './ClosePoll'
 
 const CastVote = () => {
   return (
@@ -47,7 +46,6 @@ const CastVote = () => {
     <ProceedPay/>
     <PaymentConfirmed/>
     <HowManyVotes/>
-    <ClosePoll/>
     </>
   )
 }

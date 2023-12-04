@@ -13,7 +13,9 @@ const MainCol2 = () => {
     <section className='main_col_2_section'>
       <Link to="/mypolls">  <div className='main_col_2_section_input_div'>
             <img src={poll} alt="" />
-            <input type="text" placeholder='My polls' />
+            <button>My polls</button>
+            {/* <input type="text" placeholder='My polls' /> */}
+            {/* <input type="text" placeholder='My polls' /> */}
         </div></Link>
       
 

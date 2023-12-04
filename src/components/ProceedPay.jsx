@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProceedPay = () => {
   return (
     <>
+    <section className='request_access_overlay'>
     <article className='proceed_pay_container'>
         <small>
             This is a paid poll, your contribution ensures meaningful insights. Participate now to support quality content and exclusive results
@@ -16,9 +18,10 @@ const ProceedPay = () => {
 </div>
     <div className='flex items-center justify-center mt-5'>
     <button className='go_back_btn'>Go back</button>
-    <button className='continue_btn'>Proceed to pay</button>
+    <Link to="/payment/confirmed"><button className='continue_btn'>Proceed to pay</button></Link>
     </div>
     </article>
+    </section>
     </>
   )
 }

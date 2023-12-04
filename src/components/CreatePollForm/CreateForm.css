@@ -1,6 +1,6 @@
 .create_poll_form {
   background-color: var(--white_bg_color);
-  width: 500px;
+  max-width: 350px;
   margin: auto;
   padding: 1rem 1.5rem;
 }
@@ -52,4 +52,9 @@
 .add_option label {
   color: var(--primary_purple_color);
   font-weight: 500;
+}
+@media (min-width: 764px) {
+  .create_poll_form {
+    max-width: 500px;
+  }
 }
