@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import MyPolls from "./components/MyPolls/MyPolls";
+import CastVote from "./components/CastVote";
+import CreatePollForm from "./components/CreatePollForm/CreatePollForm";
+import ClosePoll from "./components/ClosePoll";
+import PollResult from "./components/PollResult";
+import ApprovedWithdrawal from "./components/ApprovedWithdrawal";
 
 function App() {
+   const [openBurger, setOpenBurger] = useState(false)
+  const [openNotif, setOpenNotif] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home openBurger={openBurger} setOpenBurger={setOpenBurger} openNotif={openNotif} setOpenNotif={setOpenNotif}/>}></Route>
+        <Route path="/mypolls" element={<MyPolls openBurger={openBurger} setOpenBurger={setOpenBurger} openNotif={openNotif} setOpenNotif={setOpenNotif}/>}></Route>
+        <Route path="/cast_vote" element={<CastVote/>}></Route>
+        <Route path="/create_poll" element={<CreatePollForm/>}></Route>
+        <Route path="/close_poll" element={<ClosePoll/>}></Route>
+        <Route path="/poll_result" element={<PollResult openBurger={openBurger} setOpenBurger={setOpenBurger}/>}></Route>
+        <Route path="/approved/withdrawal" element={<ApprovedWithdrawal/>}></Route>
+      </Routes>
     </div>
   );
 }

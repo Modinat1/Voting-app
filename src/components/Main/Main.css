@@ -1,0 +1,162 @@
+.main_grid {
+  display: flex;
+  margin: auto;
+}
+.main_col_1_container {
+  background-color: var(--white_bg_color);
+  padding: 1rem;
+  margin: 0.3rem auto 0 auto;
+}
+.maincol_1_row_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-top: 1rem;
+}
+.maincol_1_row_1 .input_container {
+  border: 1px solid var(--light_gray_color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.maincol_1_row_1 .input_container img {
+  color: var(--light_gray_color);
+}
+.maincol_1_row_1 .input_container input {
+  width: 100%;
+  margin-left: 0.8rem;
+}
+.maincol_1_row_1 .input_container input:focus {
+  outline: none;
+}
+.maincol_1_row_1 button {
+  background-color: transparent;
+  border: 1px solid var(--light_gray_color);
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+.fifa_img_div {
+  margin: 2rem auto;
+}
+.fifa_img_div img {
+  display: block;
+  width: 100%;
+}
+.polls_btn_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.polls_btn_div button {
+  display: block;
+  background-color: transparent;
+  border: 1px solid var(--primary_purple_color);
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+/* SUGGESTED VOTE SECTION STYLING */
+.suggested_vote_section {
+  margin: 1rem auto;
+  /* max-width: 70%; */
+}
+.suggested_vote_cards {
+  display: flex;
+}
+/* ALL POLL STYLING */
+.all_polls_section {
+  margin-top: 1rem;
+}
+.all_poll_row_1_card {
+  background-color: var(--white_bg_color);
+  border: 1px solid var(--light_gray_color);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.all_poll_row_1_card_row_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all_poll_row_1_card_profile_details {
+  display: flex;
+  align-items: center;
+}
+.all_poll_row_1_card_profile_details img {
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+/* MAIN COL 2 STYLING */
+.main_col_2_section {
+  display: none;
+  margin-left: 0;
+}
+.main_col_2_section_input_div {
+  border: 1px solid var(--light_gray_color);
+  border-radius: 10px;
+  display: flex;
+  padding: 0.2rem 1rem;
+}
+.main_col_2_section_input_div input {
+  margin-left: 0.5rem;
+}
+.main_col_2_section_input_div input::placeholder {
+  color: #403f3f;
+  font-weight: 700;
+}
+.main_col_2_section .notification_card {
+  border: 1px solid var(--light_gray_color);
+  border-radius: 10px;
+  margin: 1rem auto 0 auto;
+  padding: 1rem;
+}
+.notif {
+  content: "";
+  border-bottom: 1px solid var(--light_gray_color);
+  width: 100%;
+}
+.mobile_notif_section {
+  display: block;
+  background-color: var(--white_bg_color);
+  position: fixed;
+  padding: 1rem;
+  right: 0;
+}
+.sharp_poll_div {
+  background-color: var(--light_gray_color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.sharp_poll_div img {
+  display: block;
+  margin: 0.5rem auto;
+  width: 50%;
+}
+@media (min-width: 764px) {
+  .polls_btn_div {
+    justify-content: space-between;
+  }
+  .polls_btn_div button {
+    padding: 0.5rem 5rem;
+  }
+  .main_grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+  .main_col_2_section {
+    background-color: var(--white_bg_color);
+    padding: 1rem;
+    display: block;
+    margin-top: 0.3rem;
+    margin-left: 0.8rem;
+  }
+  .mobile_notif_section {
+    display: none;
+  }
+}

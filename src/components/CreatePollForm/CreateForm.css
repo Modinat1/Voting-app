@@ -1,0 +1,55 @@
+.create_poll_form {
+  background-color: var(--white_bg_color);
+  width: 500px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+}
+.create_poll_form label {
+  color: #344054;
+  font-weight: bold;
+  display: block;
+  margin: 1rem 0;
+}
+.create_poll_form input,
+.create_poll_form select {
+  background-color: transparent;
+  border: 2px solid var(--light_gray_color);
+  border-radius: 6px;
+  color: #344054;
+  width: 100%;
+  padding: 0.5rem;
+}
+.create_poll_form input:focus,
+.create_poll_form select:focus {
+  outline: none;
+}
+.create_poll_form_btn {
+  background-color: var(--primary_purple_color);
+  border-radius: 5px;
+  color: var(--white_bg_color);
+  font-weight: 500;
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.8rem 3rem;
+}
+.add_option {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.add_option_btn_div {
+  background-color: var(--primary_purple_color);
+  color: var(--white_bg_color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 0.2rem;
+}
+.add_option button {
+  display: block;
+  margin: 0 auto 2rem;
+}
+.add_option label {
+  color: var(--primary_purple_color);
+  font-weight: 500;
+}

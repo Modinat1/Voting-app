@@ -1,0 +1,16 @@
+.side_bar_section {
+  background-color: var(--primary_purple_color);
+  display: none;
+  position: fixed;
+  height: 100dvh;
+  padding: 1.2rem;
+  /* width: 0%; */
+}
+.side_bar_section ul div span li {
+  color: var(--white_color);
+}
+@media (min-width: 764px) {
+  .side_bar_section {
+    display: block;
+  }
+}

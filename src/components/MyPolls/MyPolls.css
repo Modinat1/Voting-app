@@ -1,0 +1,101 @@
+.my_poll_section {
+  position: relative;
+}
+.view_close_poll_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.view_close_poll_btn .view_result_btn {
+  background-color: black;
+  border-radius: 30px;
+  color: var(--white_bg_color);
+  font-weight: 500;
+  padding: 1rem 3rem;
+}
+.view_close_poll_btn .close_result_btn {
+  background-color: var(--light_gray_color);
+  border-radius: 30px;
+  color: var(--primary_purple_color);
+  font-weight: 500;
+  padding: 1rem 3rem;
+}
+/* close poll modal */
+.close_poll_container_overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* height: 100vh; */
+  z-index: 10;
+  width: 100%;
+}
+.close_poll_container {
+  background-color: var(--white_bg_color);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+.poll_result_container {
+  position: relative;
+  background-color: var(--white_bg_color);
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+.poll_result_container .stick_btn {
+  background-color: var(--primary_purple_color);
+  color: var(--white_bg_color);
+  border-radius: 30px;
+  padding: 0.5rem 4rem;
+}
+.programming_lang::before {
+  content: "";
+  border-bottom: 1px solid var(--light_gray_color);
+  display: block;
+  width: 100%;
+}
+.programming_lang::after {
+  content: "";
+  border-bottom: 1px solid var(--light_gray_color);
+  display: block;
+  width: 100%;
+}
+.withdrawal_request_overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 10;
+  width: 100%;
+}
+.withdrawal_request_container {
+  background-color: var(--white_bg_color);
+  text-align: center;
+  padding: 2rem;
+  max-width: 400px;
+}
+.withdrawal_request_container img {
+  display: block;
+  margin: auto;
+}
+.withdrawal_request_btn {
+  display: block;
+  background-color: var(--primary_purple_color);
+  border-radius: 5px;
+  color: var(--white_bg_color);
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+@media (min-width: 764px) {
+  .view_close_poll_btn .view_result_btn,
+  .view_close_poll_btn .close_result_btn {
+    padding: 1rem 8rem;
+  }
+}
