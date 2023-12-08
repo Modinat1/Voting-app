@@ -14,10 +14,11 @@ import PaymentConfirmed from "./components/PaymentConfirmed";
 function App() {
    const [openBurger, setOpenBurger] = useState(false)
   const [openNotif, setOpenNotif] = useState(false)
+  const [openRequestModal, setOpenRequestModal] = useState(false)
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home openBurger={openBurger} setOpenBurger={setOpenBurger} openNotif={openNotif} setOpenNotif={setOpenNotif}/>}></Route>
+        <Route path="/" element={<Home openBurger={openBurger} setOpenBurger={setOpenBurger} openNotif={openNotif} setOpenNotif={setOpenNotif} openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>}></Route>
         <Route path="/mypolls" element={<MyPolls openBurger={openBurger} setOpenBurger={setOpenBurger} openNotif={openNotif} setOpenNotif={setOpenNotif}/>}></Route>
         <Route path="/cast_vote" element={<CastVote/>}></Route>
         <Route path="/create_poll" element={<CreatePollForm/>}></Route>

@@ -117,8 +117,10 @@
 }
 .notif {
   content: "";
+  /* display: block; */
   border-bottom: 1px solid var(--light_gray_color);
   width: 100%;
+  /* margin-top: 2rem; */
 }
 .mobile_notif_section {
   display: block;

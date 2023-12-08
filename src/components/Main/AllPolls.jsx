@@ -1,17 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import profile_pic2 from '../../assets/profile_pic2.png'
 import ProgressBar from '../PrgogressBar/ProgressBar'
 import timeIcon from '../../assets/timeIcon.png'
 import fifa_img from '../../assets/fifa_Img.png'
 import fourth_card_img from '../../assets/fourth_card_img.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const AllPolls = (props) => {
   const {openRequestModal, setOpenRequestModal} = props
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
   return (
     <section className='all_polls_section'>
         {/* FIRST CARD */}
-        <div className='all_poll_row_1_card'>
+        <div className='all_poll_row_1_card' data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="600">
 
             <div className='all_poll_row_1_card_row_1'>
             <div className='all_poll_row_1_card_profile_details'>
@@ -25,7 +31,7 @@ const AllPolls = (props) => {
         
         <h4 className='my-2'>What is yout preferred programming language</h4>
         <ProgressBar title="Python" percent="75%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
-        <ProgressBar title="Javascript" percent="40%"/>
+        <ProgressBar title="Javascript" percent="40%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
 
         <div className='flex items-center justify-between mt-2'>
             <div className='flex items-center'>
@@ -37,7 +43,7 @@ const AllPolls = (props) => {
        
         </div>
         {/* SECOND CARD */}
-        <div className='all_poll_row_1_card mt-3'>
+        <div className='all_poll_row_1_card mt-3' data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="600">
           <div className='all_poll_row_1_card_row_1'>
             <div className='all_poll_row_1_card_profile_details'>
             <img src={profile_pic2} alt="" />
@@ -47,9 +53,9 @@ const AllPolls = (props) => {
             <small>Today @ 12:00PM</small>
             </div>
 
-             <ProgressBar title="Python" percent="50%"/>
-              <ProgressBar title="Javascript" percent="50%"/>
-              <ProgressBar title="Javascript" percent="50%"/>
+             <ProgressBar title="Python" percent="50%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
+              <ProgressBar title="Javascript" percent="50%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
+              <ProgressBar title="Javascript" percent="50%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
               <ProgressBar title="Javascript" percent="50%"/>
               <ProgressBar title="Javascript" percent="50%"/>
               <ProgressBar title="Javascript" percent="50%"/>
@@ -76,8 +82,8 @@ const AllPolls = (props) => {
             <small>Today @ 12:00PM</small>
             </div>
 
-             <ProgressBar title="Python" percent="75%"/>
-              <ProgressBar title="Javascript" percent="50%"/>
+             <ProgressBar title="Python" percent="75%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
+              <ProgressBar title="Javascript" percent="50%" openRequestModal={openRequestModal} setOpenRequestModal={setOpenRequestModal}/>
 
                <div className='flex items-center justify-between mt-2'>
             <div className='flex items-center'>
