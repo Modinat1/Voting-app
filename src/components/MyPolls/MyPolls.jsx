@@ -329,7 +329,8 @@ const MyPolls = (props) => {
             <h3 className='font-bold text-lg'>Notifications</h3>
 
         {/* FIRST NOTIF */}
-           <div className='notif flex items-center my-3'>
+        <article className='notif'>
+           <div className='flex items-center my-3'>
             <div>
             <img src={user_1} alt="user_image" />
 
@@ -345,10 +346,10 @@ const MyPolls = (props) => {
             
           </div>
             </div>    
-
+</article>
             {/* SECOND NOTIF */}
-               
-        <div className=' notif flex items-center my-3'>
+               <article className='notif'>
+        <div className=' flex items-center my-3'>
             <img src={user_2} alt="user_image" />
 
             <div className='ml-3'>
@@ -357,11 +358,11 @@ const MyPolls = (props) => {
             <button className='mt-2 text-sm' style={{color: "#4f0da3"}}>View poll</button>
           </div>
             </div>
-
+</article>
                           
 {/* THIRD NOTIF */}
-               
-        <div className='notif flex items-center my-3'>
+               <article className='notif'>
+        <div className='flex items-center my-3'>
           <div className='sharp_poll_div'>
             <img src={sharp_poll} alt="" />
 
@@ -373,7 +374,7 @@ const MyPolls = (props) => {
             <button className='mt-2 text-sm' style={{color: "#4f0da3"}}>View result</button>
           </div>
             </div>
-
+</article>
             {/* FOURTH NOTIF */}
                
         <div className='flex items-center my-3'>

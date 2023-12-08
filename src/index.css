@@ -71,6 +71,7 @@ body {
   height: 100dvh;
   padding: 1.2rem;
   transition: all 0.5 ease;
+  z-index: 10;
 }
 .mobile_header {
   background-color: var(--white_bg_color);
@@ -92,13 +93,13 @@ body {
 /* CAST VOTE COMPONENT */
 .cast_vote_container {
   background-color: var(--white_bg_color);
-  max-width: 700px;
-  padding: 3rem;
+  width: 350px;
+  padding: 1rem;
   margin: auto;
 }
 .unique_token_section {
   background-color: var(--white_bg_color);
-  max-width: 350px;
+  max-width: 300px;
   padding: 1rem;
   margin: auto;
   text-align: center;
@@ -108,7 +109,7 @@ body {
 .proceed_pay_container .go_back_btn {
   border: 1px solid var(--primary_purple_color);
   border-radius: 10px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.7rem;
   margin-right: 0.5rem;
 }
 .unique_token_section .continue_btn,
@@ -119,11 +120,11 @@ body {
   background-color: var(--primary_purple_color);
   color: var(--white_bg_color);
   border-radius: 10px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.7rem;
 }
 .access_poll_container {
   background-color: var(--white_bg_color);
-  max-width: 350px;
+  max-width: 300px;
   padding: 1rem;
   margin: auto;
   text-align: center;
@@ -146,18 +147,18 @@ body {
   background-color: var(--primary_purple_color);
   color: var(--white_bg_color);
   border-radius: 10px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.7rem;
 }
 .request_access_container .go_back_btn {
   border: 1px solid var(--primary_purple_color);
   border-radius: 10px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.7rem;
   margin-right: 0.5rem;
 }
 .proceed_pay_container {
   background-color: var(--white_bg_color);
   border-radius: 4px;
-  max-width: 350px;
+  max-width: 300px;
   padding: 1rem 2rem;
   margin: auto;
   text-align: center;
@@ -227,7 +228,8 @@ body {
     margin-right: 3rem;
   }
   .cast_vote_container {
-    max-width: 400px;
+    padding: 3rem;
+    width: 700px;
   }
   .unique_token_section .go_back_btn,
   .access_poll_container .go_back_btn,
@@ -251,5 +253,8 @@ body {
   .request_access_container .continue_btn,
   .request_access_container .go_back_btn {
     padding: 0.5rem 4rem;
+  }
+  .pay_confirm_section {
+    width: 600px;
   }
 }

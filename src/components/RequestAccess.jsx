@@ -11,7 +11,7 @@ const RequestAccess = () => {
         </small>
           <div className='flex items-center justify-center mt-5'>
 
-    <button className='go_back_btn'>Go back</button>
+    <Link to="/"><button className='go_back_btn'>Go back</button></Link>
     <Link to="/proceed/pay"><button className='continue_btn'>Request access</button></Link>
     </div>
     </article>

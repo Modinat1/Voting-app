@@ -1,21 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import poll from '../../assets/poll.png'
 import user_1 from '../../assets/user_1.png'
 import user_2 from '../../assets/user_2.png'
 import sharp_poll from '../../assets/sharp_poll.png'
 import fluent_payment from '../../assets/fluent_payment.png'
 import { Link } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MainCol2 = () => {
-
+   useEffect(() => {
+        AOS.init();
+      }, [])
   return (
-    <section className='main_col_2_section'>
+    <section className='main_col_2_section' data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-delay="100" data-aos-duration="600">
       <Link to="/mypolls">  <div className='main_col_2_section_input_div'>
             <img src={poll} alt="" />
             <button>My polls</button>
-            {/* <input type="text" placeholder='My polls' /> */}
-            {/* <input type="text" placeholder='My polls' /> */}
         </div></Link>
       
 
@@ -23,7 +24,8 @@ const MainCol2 = () => {
             <h3 className='font-bold text-lg'>Notifications</h3>
 
         {/* FIRST NOTIF */}
-           <div className='notif flex items-center my-3'>
+        <article className='notif'>
+           <div className='flex items-center my-3'>
             <div>
             <img src={user_1} alt="user_image" />
 
@@ -39,10 +41,10 @@ const MainCol2 = () => {
             
           </div>
             </div>    
-
+</article>
             {/* SECOND NOTIF */}
-               
-        <div className=' notif flex items-center my-3'>
+               <article className='notif'>
+        <div className='flex items-center my-3'>
             <img src={user_2} alt="user_image" />
 
             <div className='ml-3'>
@@ -52,10 +54,10 @@ const MainCol2 = () => {
           </div>
             </div>
 
-                          
+                 </article>         
 {/* THIRD NOTIF */}
-               
-        <div className='notif flex items-center my-3'>
+              <article className='notif'>
+        <div className='flex items-center my-3'>
           <div className='sharp_poll_div'>
             <img src={sharp_poll} alt="" />
 
@@ -67,7 +69,7 @@ const MainCol2 = () => {
             <button className='mt-2 text-sm' style={{color: "#4f0da3"}}>View result</button>
           </div>
             </div>
-
+</article>
             {/* FOURTH NOTIF */}
                
         <div className='flex items-center my-3'>
@@ -82,7 +84,6 @@ const MainCol2 = () => {
           </div>
             </div>
         </div>
-
         
     </section>
   )
