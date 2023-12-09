@@ -63,7 +63,7 @@ const Result = (props) =>{
 
             <div>
                 <h4 className='font-bold'>Salem Lawal</h4>
-                <h6>Product designer</h6>
+                <small className='block'>Product designer</small>
                 <small>Lagos, Nigeria</small>
             </div>
             </div>

@@ -1,8 +1,6 @@
 .my_poll_section {
   position: relative;
   margin: auto;
-  overflow-x: hidden;
-  /* padding: 0 1rem; */
 }
 .view_close_poll_btn {
   display: flex;
@@ -14,14 +12,14 @@
   border-radius: 30px;
   color: var(--white_bg_color);
   font-weight: 500;
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
 .view_close_poll_btn .close_result_btn {
   background-color: var(--light_gray_color);
   border-radius: 30px;
   color: var(--primary_purple_color);
   font-weight: 500;
-  padding: 1rem 3rem;
+  padding: 1rem;
 }
 /* close poll modal */
 .close_poll_container_overlay {
