@@ -181,6 +181,7 @@ body {
 }
 .home_section {
   position: relative;
+  overflow-x: hidden;
 }
 .request_access_overlay {
   position: absolute;
