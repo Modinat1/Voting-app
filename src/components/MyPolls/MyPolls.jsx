@@ -37,7 +37,6 @@ const MyPolls = (props) => {
             {openBurger ? <MobileBar/> : 'null'}
             </aside>
           <main className='w-full md:w-10/12 mx-0'>
-            {/* <section> */}
         <Header/>
         <MobileHeader openNotif={openNotif} setOpenNotif={setOpenNotif}/>
         <div className='main_grid'>
@@ -112,7 +111,7 @@ const MyPolls = (props) => {
 </div>
 </div>
 
-<div className='flex ml-60'>
+<div className='flex ml-20 md:ml-60'>
   <div>
 <img src={laVote} alt="" />
 
@@ -175,7 +174,7 @@ const MyPolls = (props) => {
 </div>
 </div>
 
-<div className='flex ml-60'>
+<div className='flex ml-20 md:ml-60'>
   <div>
 <img src={laVote} alt="" />
 
@@ -234,7 +233,7 @@ const MyPolls = (props) => {
 </div>
 </div>
 
-<div className='flex ml-60'>
+<div className='flex ml-20 md:ml-60'>
   <div>
 <img src={laVote} alt="" />
 
@@ -293,7 +292,7 @@ const MyPolls = (props) => {
 </div>
 </div>
 
-<div className='flex ml-60'>
+<div className='flex ml-20 md:ml-60'>
   <div>
 <img src={laVote} alt="" />
 
@@ -394,11 +393,10 @@ const MyPolls = (props) => {
     </section>
 
         {/* MAIN COL 2 ENDS */}
-        {/* <MainCol2/> */}
         
         {openNotif ? <MainCol2Mobile/> : null}
         </div>
-      {/* </section> */}
+      
     
             </main>
             </div>
